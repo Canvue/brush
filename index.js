@@ -1,1 +1,1 @@
-export Track from './src/track'
+export TrackBrush from './src/track'
