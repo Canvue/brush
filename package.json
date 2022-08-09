@@ -1,0 +1,27 @@
+{
+  "name": "@canvue/brush",
+  "version": "1.0.0",
+  "description": "Canvue插件，基于fabric.js扩展的自定义笔刷工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Canvue/brush.git"
+  },
+  "keywords": [
+    "canvue",
+    "js",
+    "fabric.js"
+  ],
+  "author": "LeeNux @lc7457",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Canvue/brush/issues"
+  },
+  "homepage": "https://github.com/Canvue/brush#readme",
+  "devDependencies": {
+    "fabric": "^5.0.0"
+  }
+}
