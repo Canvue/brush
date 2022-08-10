@@ -4,7 +4,7 @@ import {fabric} from "fabric";
  * 轨迹笔刷
  *   ：根据绘制轨迹生成图案
  */
-export default fabric.util.createClass(fabric.BaseBrush, {
+export const TrackBrush = fabric.util.createClass(fabric.BaseBrush, {
     _options: {
         minPoints: 10,
         stepPathWidth: 2,
