@@ -16,7 +16,7 @@ let _objects = [] // 对象池
 /**
  * 树枝
  */
-export default class TreeBranchV1 {
+export class TreeBranchV1 {
     type = 'tree'
     nBranches = 0
     maxBranches = 200
