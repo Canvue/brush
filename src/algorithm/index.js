@@ -1,1 +1,1 @@
-export TreeBranch from './plant/TreeBranchV1'
+export TreeBranchV1 from './plant/TreeBranchV1'
