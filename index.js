@@ -1,3 +1,3 @@
 export {TrackBrush} from './src/track'
 
-export * from './src/plant/'
+export * from './src/algorithm/'
