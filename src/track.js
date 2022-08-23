@@ -47,16 +47,17 @@ export const TrackBrush = fabric.util.createClass(fabric.BaseBrush, {
     },
 
     onMouseUp: function (pointer) {
-        if (this._points.length < this._options.minPoints) return
-        let originalRenderOnAddRemove = this.canvas.renderOnAddRemove;
-        this.canvas.renderOnAddRemove = false;
+        if (this._points.length > this._options.minPoints) {
+            let originalRenderOnAddRemove = this.canvas.renderOnAddRemove;
+            this.canvas.renderOnAddRemove = false;
 
-        // 保存轨迹笔刷对象内容
-        this._save(this._options.generateObjectFn(this._points));
+            // 保存轨迹笔刷对象内容
+            this._save(this._options.generateObjectFn(this._points));
+            this.canvas.renderOnAddRemove = originalRenderOnAddRemove;
+            this.canvas.requestRenderAll();
+        }
 
         this._resetShadow();
-        this.canvas.renderOnAddRemove = originalRenderOnAddRemove;
-        this.canvas.requestRenderAll();
         this._reset();
     },
 
